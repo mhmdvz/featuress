@@ -1,0 +1,29 @@
+.features {
+    position: relative;
+    top: -5rem;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 992px) {
+        top: 0%;
+    }
+
+    &__box {
+        width: 30rem;
+        flex-grow: 1;
+        border-radius: 1.4rem;
+        padding: 1rem 2rem;
+        margin: 2rem;
+        text-align: center;
+        background-color: $color-white;
+        box-shadow: 0 8px 16px 0 rgba($color-site3, 0.4);
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.04);
+        }
+    }
+
+    &__text {
+        padding: 1rem 2rem;
+    }
+}
